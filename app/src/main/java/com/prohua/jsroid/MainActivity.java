@@ -1,5 +1,6 @@
 package com.prohua.jsroid;
 
+import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private WebView webView;
 
     @Override
+    @SuppressLint("SetJavaScriptEnabled")
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -39,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
         // 格式规定为:file:///android_asset/文件名.html
         webView.loadUrl("file:///android_asset/javascript.html");
     }
-
 
     @Override
     public void onStart() {
