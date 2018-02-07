@@ -15,6 +15,9 @@ import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
+/**
+ * JS调用安卓方法，此方法需要至少安卓4.4系统
+ */
 public class MainActivity extends AppCompatActivity {
 
     private WebView webView;

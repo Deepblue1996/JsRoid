@@ -3,6 +3,7 @@ package com.prohua.jsroid.event;
 import java.io.Serializable;
 
 /**
+ * 事件
  * Created by Deep on 2018/2/7 0007.
  */
 
